@@ -20,7 +20,7 @@ const RegisterPage = (props: Props) => {
   // Form Submit
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(isLoaded)
+    // console.log(isLoaded)
 
 
     if (!isLoaded) {
@@ -41,12 +41,10 @@ const RegisterPage = (props: Props) => {
       // change the UI to our pending section.
       setPendingVerification(true);
     } catch (err) {
-      console.error(err);
+      // console.error(err);
     }
   };
-  console.log(pendingVerification)
-  console.log(signUp)
-
+  
   // Verify User Email Code
   const onPressVerify = async (e: FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
